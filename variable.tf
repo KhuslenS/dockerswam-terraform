@@ -11,13 +11,13 @@ variable "instance_type" {
   description = "Instance type"
   default     = "t2.micro"
 }
-variable "key_path" {
-  description = "SSH Public Key path"
-  default     = "//Users/solongoganbold/downloads/docker-swarm.pem"
-}
+# variable "key_path" {
+#   description = "SSH Public Key path"
+#   default     = "//Users/solongoganbold/downloads/docker-swarm.pem"
+# }
 variable "key_name" {
-  description = "docker-swarm"
-  default     = "docker-swarm"
+  description = "tower_key"
+  default     = "tower_key"
 }
 variable "bootstrap_path" {
   description = "Script to install Docker Engine"
