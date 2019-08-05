@@ -9,7 +9,7 @@ resource "aws_instance" "master" {
   key_name               = "${var.key_name}"
   user_data              = "${file("${var.bootstrap_path}")}"
   vpc_security_group_ids = ["${aws_security_group.sgswarm.id}"]
-  tags {
+  tags = {
     Name = "master"
   }
 }
@@ -19,7 +19,7 @@ resource "aws_instance" "worker1" {
   key_name               = "${var.key_name}"
   user_data              = "${file("${var.bootstrap_path}")}"
   vpc_security_group_ids = ["${aws_security_group.sgswarm.id}"]
-  tags {
+  tags = {
     Name = "worker 1"
   }
 }
@@ -29,7 +29,7 @@ resource "aws_instance" "worker2" {
   key_name               = "${var.key_name}"
   user_data              = "${file("${var.bootstrap_path}")}"
   vpc_security_group_ids = ["${aws_security_group.sgswarm.id}"]
-  tags {
+  tags = {
     Name = "worker 2"
   }
 }
