@@ -16,8 +16,8 @@ variable "instance_type" {
 #   default     = "//Users/solongoganbold/downloads/docker-swarm.pem"
 # }
 variable "key_name" {
-  description = "tower_key"
-  default     = "tower_key"
+  description = "bastion-host-key"
+  default     = "bastion-host-key"
 }
 variable "bootstrap_path" {
   description = "Script to install Docker Engine"
