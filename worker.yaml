@@ -1,0 +1,15 @@
+---
+  - name: Join Swarm Cluster
+    hosts: localhost
+    become: true
+    remote_user: ubuntu
+    gather_facts: False
+    tasks:
+      - name: Join Swarm Cluster as a Worker
+            # command: sudo usermod -aG docker {{remote_user}}
+        command: sudo docker swarm join --token {{ token }} {{ master }}:2377
+        register: worker
+      - name: Show Results
+        debug: var=worker.stdout
+      - name: Show Errors
+        debug: var=worker.stderr
