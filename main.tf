@@ -10,7 +10,7 @@ resource "aws_instance" "master" {
   user_data              = "${file("${var.bootstrap_path}")}"
   # user_data              = "${file("${var.manager_token}")}"
   vpc_security_group_ids = ["${aws_security_group.sgswarm.id}"]
-}
+
 
 
   tags = {
