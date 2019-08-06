@@ -23,3 +23,9 @@ variable "bootstrap_path" {
   description = "Script to install Docker Engine"
   default     = "install_docker_machine_compose.sh"
 }
+variable "manager_token" {
+  default = "manager-token.sh"
+}
+variable "worker_token" {
+  default = "worker-token.sh"
+}
