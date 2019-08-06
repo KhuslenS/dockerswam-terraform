@@ -1,8 +1,8 @@
 ### security-groups.tf
-resource "aws_security_group" "sg-swarm" {
-  name = "sg-swarm"
+resource "aws_security_group" "sgwarm" {
+  name = "sgwarm"
   tags = {
-    Name = "sg-swarm"
+    Name = "sgwarm"
   }
   # Allow all inbound
   ingress {
