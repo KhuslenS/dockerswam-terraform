@@ -1,6 +1,6 @@
 ### security-groups.tf
-resource "aws_security_group" "sgwarm" {
-  name = "sgwarm"
+resource "aws_security_group" "sgwarm-qa" {
+  name = "sgwarm-qa"
   tags = {
     Name = "sgwarm"
   }
