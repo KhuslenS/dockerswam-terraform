@@ -1,6 +1,6 @@
 ### security-groups.tf
-resource "aws_security_group" "sgwarm" {
-  name = "sgwarm"
+resource "aws_security_group" "sgwarm-tool" {
+  name = "sgwarm-tool"
   tags = {
     Name = "sgwarm"
   }
