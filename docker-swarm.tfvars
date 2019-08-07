@@ -1,5 +1,5 @@
 aws_region    = "us-west-1"
-ami           = "ami-08fd8ae3806f09a08"
+ami           = "ami-0ac05733838eabc06"
 instance_type = "t2.xlarge"
 key_name      = "Bastion-Key" #be aware of that key should exist in your specifing region
 env           = "Tools"
